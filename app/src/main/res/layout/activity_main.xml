@@ -42,5 +42,11 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/pDescripcion"/>
+
+        <Button
+            android:id="@+id/boton_crear_Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear Usuario" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
