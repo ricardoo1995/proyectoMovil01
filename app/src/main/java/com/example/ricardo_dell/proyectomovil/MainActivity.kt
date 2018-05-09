@@ -2,9 +2,14 @@ package com.example.ricardo_dell.proyectomovil
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.widget.EditText
+import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), TextWatcher {
+
+
     private  var editCodigo: EditText?= null
     private  var editNombre: EditText?= null
     private  var editPrecio: EditText?= null
@@ -23,6 +28,23 @@ class MainActivity : AppCompatActivity() {
         editNombre = findViewById(R.id.editText_Nombre)
         editPrecio = findViewById(R.id.editText_Precio)
         editDescripcion = findViewById(R.id.editText_Descripcion)
+        //Obtener datos ingresados
+        editCodigo?.addTextChangedListener(this)
+        editNombre?.addTextChangedListener(this)
+        editPrecio?.addTextChangedListener(this)
+        editDescripcion?.addTextChangedListener(this)
+
+    }
+    override fun afterTextChanged(s: Editable?) {
+
+    }
+
+    override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+        
+    }
+
+    override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+       Toast.makeText(this, s.toString(),Toast.LENGTH_SHORT).show()
     }
 }
 
