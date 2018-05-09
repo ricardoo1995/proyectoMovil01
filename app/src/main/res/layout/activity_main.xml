@@ -12,35 +12,35 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editText_Codigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="@string/pCodigo"/>
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editText_Nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="@string/pNombre"/>
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editText_Precio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:inputType="number"
+            android:hint="@string/pPrecio"/>
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/editText_Descripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="@string/pDescripcion"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

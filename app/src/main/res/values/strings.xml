@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Ingresar Productos</string>
+    <string name="pCodigo">Codigo</string>
+    <string name="pNombre">Nombre</string>
+    <string name="pPrecio">Precio</string>
+    <string name="pDescripcion">Descripcion</string>
 </resources>
